@@ -70,6 +70,8 @@
                     <?php foreach ($hotel as $dato) { ?>
                         <td><?php if ($dato === true) { 
                             echo 'yes'; 
+                        } elseif ($dato === false) {
+                            echo 'nope';
                         } else echo $dato; ?></td>
                     <?php } ?>
                 </tr>
