@@ -69,8 +69,8 @@
                 <tr>
                     <?php foreach ($hotel as $dato) { ?>
                         <td><?php if ($dato === true) { 
-                            return 'yes'; 
-                        } else return $dato; ?></td>
+                            echo 'yes'; 
+                        } else echo $dato; ?></td>
                     <?php } ?>
                 </tr>
             <?php } ?>
