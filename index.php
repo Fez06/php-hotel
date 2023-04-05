@@ -65,11 +65,12 @@
             </tr>
         </thead>
         <tbody>
-            
             <?php foreach ($hotels as $hotel) { ?>
                 <tr>
                     <?php foreach ($hotel as $dato) { ?>
-                        <td><?php echo $dato ?></td>
+                        <td><?php if ($dato === true) { 
+                            return 'yes'; 
+                        } else return $dato; ?></td>
                     <?php } ?>
                 </tr>
             <?php } ?>
