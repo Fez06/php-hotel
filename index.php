@@ -51,8 +51,22 @@
         ],
 
     ];
-
+    var_dump($hotels);
     ?>
+
+    <form action="index.php" method="get">
+        <button>Visualizza solo hotel con parcheggio</button>
+    </form>
+    
+    <?php 
+    // function my_function() {
+    //     foreach ($hotels as $hotel) {
+    //         if ($hotel['parking'] === true )
+    //         return true;
+    //     }
+    // }
+    ?>
+    
 
     <table class="table">
         <thead>
